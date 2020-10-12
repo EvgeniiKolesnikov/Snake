@@ -1,0 +1,7 @@
+D:\Games\GeekBrains\Snake\Snake\Snake\bin\Debug\Snake.exe.config
+D:\Games\GeekBrains\Snake\Snake\Snake\bin\Debug\Snake.exe
+D:\Games\GeekBrains\Snake\Snake\Snake\bin\Debug\Snake.pdb
+D:\Games\GeekBrains\Snake\Snake\Snake\obj\Debug\Snake.csprojAssemblyReference.cache
+D:\Games\GeekBrains\Snake\Snake\Snake\obj\Debug\Snake.csproj.CoreCompileInputs.cache
+D:\Games\GeekBrains\Snake\Snake\Snake\obj\Debug\Snake.exe
+D:\Games\GeekBrains\Snake\Snake\Snake\obj\Debug\Snake.pdb

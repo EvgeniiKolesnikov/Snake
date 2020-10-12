@@ -15,21 +15,37 @@ namespace Snake
 
             Point p2 = new Point(4, 5, '#');
             p2.Draw();
+
             Console.WriteLine();
-            Console.WriteLine($"p1 = {p1.x}, {p1.y}, {p1.sym}"); // 1 3
-            Console.WriteLine($"p2 = {p2.x}, {p2.y}, {p2.sym}"); // 4 5
 
-            p1 = p2;
-            Console.WriteLine($"p1 = p2");
+            List<int> numList = new List<int>();
+            
+            numList.Add(0);
+            numList.Add(1);
+            numList.Add(2);
 
-            Console.WriteLine($"p1 = {p1.x}, {p1.y}, {p1.sym}"); // 4 5
-            Console.WriteLine($"p2 = {p2.x}, {p2.y}, {p2.sym}"); // 4 5
+            int x = numList[0];
+            int y = numList[1];
+            int z = numList[2];
 
-            p2.x++;
-            p2.y++;
-            Console.WriteLine($"p2++");
-            Console.WriteLine($"p1 = {p1.x}, {p1.y}, {p1.sym}"); // 5 6
-            Console.WriteLine($"p2 = {p2.x}, {p2.y}, {p2.sym}"); // 5 6
+            foreach (int i in numList)
+            {
+                Console.WriteLine(i);
+            }
+
+            // numList.RemoveAt(0);   // удалить элемент списка по индексу
+
+            List<Point> pList = new List<Point>();
+            pList.Add(p1);
+            pList.Add(p2);
+
+            foreach (var p in pList)
+            {
+                Console.Write(p.x.ToString() 
+                            + p.y.ToString() 
+                            + p.sym);
+                Console.WriteLine();
+            }
 
             Console.ReadLine();
         }

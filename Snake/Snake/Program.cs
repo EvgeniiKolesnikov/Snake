@@ -37,6 +37,7 @@ namespace Snake
                 {
                     food = foodCreator.CreateFood();
                     food.Draw();
+                    
                 } else
                 {
                     snake.Move();
@@ -46,8 +47,8 @@ namespace Snake
                     ConsoleKeyInfo key = Console.ReadKey();
                     snake.HandleKey(key.Key);
                 }
-                Thread.Sleep(100);
-                snake.Move();
+                Thread.Sleep(200);
+                //snake.Move();
             }
             Console.ReadLine();
         }

@@ -21,6 +21,13 @@ namespace Snake
             this.y = y;
             this.sym = sym;
         }
+        public Point(int x, int y, char sym, bool draw)
+        {
+            this.x = x;
+            this.y = y;
+            this.sym = sym;
+            if (draw) Draw();
+        }
         public void Draw()
         {
             Console.SetCursorPosition(x, y);

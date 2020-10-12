@@ -30,10 +30,17 @@ namespace Snake
         }
         public Point(Point p)
         {
-            x = p.x;
-            y = p.y;
+            this.x = p.x;
+            this.y = p.y;
             sym = p.sym;
         }
+
+        internal void Clear()
+        {
+            sym = ' ';
+            Draw();
+        }
+
         public void Move(int offset, Direction direction)
         {
             if      (direction == Direction.RIGHT) x = x + offset;

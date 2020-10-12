@@ -22,12 +22,11 @@ namespace Snake
             leftLine.DrawLine();
             rightLine.DrawLine();
 
-            Point p1 = new Point(1, 3, '*', true);
-            Point p2 = new Point(4, 5, '#', true);
-            Console.WriteLine();
+            Point p = new Point(4, 5, '*', true);
+            Snake snake = new Snake(p, 4, Direction.RIGHT);
+            snake.DrawLine();
 
-            HorizontalLine line = new HorizontalLine(5, 10, 8, '+');
-            line.DrawLine();
+            Console.WriteLine();
             Console.ReadLine();
         }
     }
